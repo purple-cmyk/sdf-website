@@ -299,7 +299,7 @@ export function Nav() {
           <img
             src={sdfLogo}
             alt="SDF logo"
-            className="h-10 w-10 rounded-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-12 sm:w-12"
+            className="h-[2.875rem] w-[2.875rem] rounded-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-[3.45rem] sm:w-[3.45rem]"
           />
 
           <span className="font-display text-[11px] font-medium tracking-[-0.02em] sm:text-sm md:text-base">
