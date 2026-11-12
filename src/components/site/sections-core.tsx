@@ -122,13 +122,13 @@ export function Conference() {
             index=""
             eyebrow=""
             title="ICDF 2027"
-            description="Three days of original research, adversarial simulation, and hands-on training — all under one roof, with the people who are actually doing the work."
+            description="Two days of original research all under one roof, with the people who are actually doing the work."
           />
 
           <Reveal delay={0.2} className="mt-12">
             <dl className="grid gap-8 sm:grid-cols-3">
               {[
-                { icon: CalendarDays, label: "Date", value: "3–5 Jan 2027" },
+                { icon: CalendarDays, label: "Date", value: "7–8 Jan 2027" },
                 { icon: MapPin, label: "Venue", value: "Eros Hotel, Nehru Place" },
                 { icon: Sparkles, label: "Theme", value: "Digital Forensic" },
               ].map((d) => (
