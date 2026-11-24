@@ -406,7 +406,7 @@ export function MembershipPage() {
 
                   <th className="w-[22%] border-b border-border px-2 py-4 text-center font-medium">
                     <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-primary md:text-[12px]">
-                      1 Year
+                      1 Year*
                     </span>
                   </th>
 
@@ -498,7 +498,7 @@ export function MembershipPage() {
             </li>
             <li className="flex items-start gap-3 text-[15px] leading-relaxed text-muted-foreground md:text-base">
               <span className="font-mono text-xs font-semibold text-primary">04</span>
-              <span>Exclusive guidance from society experts for members/ member organisations.
+              <span>Membership is valid for one financial year. Please reapply on 1st April each year to renew your membership.
                 </span>
             </li>
           </ol>
