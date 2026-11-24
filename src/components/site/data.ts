@@ -66,7 +66,7 @@ export const speakers = [
   },
   {
     name: "Lt. Col Santosh Khadsare",
-    role: "CBO, SysTools",
+    role: "iDefense",
     org: "Government Cyber Security Division",
     img: santoshKhadsareImage,
     topic: "VICE CHAIRMAN",
