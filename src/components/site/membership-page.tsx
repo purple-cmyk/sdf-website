@@ -216,6 +216,7 @@
 
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, Mail } from "lucide-react";
+import iDefenceImage from "@/assets/more/iDefence.png";
 
 const signupFormUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSf3MpkGm82EpVyrk54oAECx9tFwtE7qN5hYJkHNsbl4jb8OEg/viewform";
@@ -471,6 +472,36 @@ export function MembershipPage() {
             </table>
           </div>
         </div>
+
+        <section
+          aria-labelledby="idefence-benefit-title"
+          className="mt-10 grid overflow-hidden border border-primary/30 bg-surface/40 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]"
+        >
+          <div className="flex flex-col justify-center p-6 md:p-9">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-primary">
+              Exclusive member benefit
+            </p>
+            <h2
+              id="idefence-benefit-title"
+              className="mt-3 font-display text-2xl tracking-tight md:text-3xl"
+            >
+              50% OFF iDefence journals and publications
+            </h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground md:text-base">
+              Every membership plan includes 50% off purchases of iDefence
+              journals and publications.
+            </p>
+          </div>
+          <div className="flex items-center justify-center bg-white p-4 md:p-6">
+            <img
+              src={iDefenceImage}
+              alt="iDefence 4N6 digital forensics publication cover"
+              className="max-h-[34rem] w-auto max-w-full object-contain"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </section>
 
         <section
           aria-labelledby="membership-benefits-title"
