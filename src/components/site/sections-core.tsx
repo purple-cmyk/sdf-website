@@ -34,7 +34,7 @@ export function About() {
 
             <div className="mt-8 border-t border-border pt-6">
               <p className="font-mono text-[10px] tracking-[0.22em] text-muted-foreground">
-                CHAIRMAN
+                CHAIR
               </p>
               <h3 className="mt-3 font-display text-2xl font-medium tracking-tight text-foreground">
                 Gaurav Gupta

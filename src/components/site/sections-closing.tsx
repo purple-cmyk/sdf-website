@@ -182,7 +182,7 @@ export function Footer() {
         </a>
 
         <p className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground">
-          © {new Date().getFullYear()} @SDF 2026 | All rights reserved.
+          @SDF {new Date().getFullYear()} | All rights reserved.
         </p>
       </div>
     </footer>

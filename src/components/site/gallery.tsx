@@ -36,7 +36,7 @@ export function CinematicGallery() {
           </h2>
         </div>
         <p className="hidden max-w-xs text-sm leading-relaxed text-muted-foreground md:block">
-          Three days. 500 attendees. Drag to explore the archive.
+          Two days. 500 attendees. Drag to explore the archive.
         </p>
       </div>
 
