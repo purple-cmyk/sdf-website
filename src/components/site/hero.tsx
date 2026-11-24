@@ -213,32 +213,22 @@
 //   );
 // }
 
-
-
-
 import { useRef } from "react";
-import {
-  motion,
-  useInView,
-  useReducedMotion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useInView, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Lock, Terminal } from "lucide-react";
 import Spline from "@splinetool/react-spline";
 import { MagneticLink, SplitWords } from "./primitives";
 
-const splineScene =
-  "https://prod.spline.design/lDiSr2UkDz7GShFR/scene.splinecode";
+const splineScene = "https://prod.spline.design/lDiSr2UkDz7GShFR/scene.splinecode";
 
 function Ticker() {
   const tickerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(tickerRef);
   const items = [
-    "ACCEPTING PAPERS FOR 2027",
+    "PAPER SUBMISSIONS NOW CLOSED",
     "11.9 WG IFIP DIGITAL FORENSIC CONFERENCE",
-    "CALL FOR PAPERS NOW OPEN (OCT 10, 2026)",
-    "SUBMIT YOUR RESEARCH",
+    "2027 PROGRAM & SPEAKER LINEUP COMING SOON",
+    "REGISTRATIONS OPENED",
   ];
 
   return (
@@ -309,10 +299,7 @@ export function Hero() {
               origin-center
             "
           >
-            <Spline
-              scene={splineScene}
-              className="h-full w-full"
-            />
+            <Spline scene={splineScene} className="h-full w-full" />
           </div>
         </div>
       ) : null}
@@ -337,10 +324,7 @@ export function Hero() {
       />
 
       {/* Top border */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-white/30"
-      />
+      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-px bg-white/30" />
 
       {/* Corner markers */}
       <div
@@ -375,11 +359,7 @@ export function Hero() {
           </span>
 
           <span className="mt-2 block whitespace-nowrap text-[clamp(2rem,6.5vw,6.4rem)] leading-[0.92] text-white text-glow">
-            <SplitWords
-              text="DIGITAL FORENSIC"
-              delay={0.55}
-              stagger={0.07}
-            />
+            <SplitWords text="DIGITAL FORENSIC" delay={0.55} stagger={0.07} />
           </span>
         </h1>
 
@@ -394,9 +374,8 @@ export function Hero() {
           }}
           className="mt-8 max-w-2xl text-balance text-sm leading-relaxed text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.95)] sm:text-base md:text-lg"
         >
-          Advancing the science of digital evidence through research,
-          collaboration, education, and meaningful dialogue across the
-          global digital forensic community.
+          Advancing the science of digital evidence through research, collaboration, education, and
+          meaningful dialogue across the global digital forensic community.
         </motion.p>
 
         {/* Action buttons */}
@@ -422,12 +401,14 @@ export function Hero() {
           </MagneticLink>
 
           <MagneticLink
-            href="#workshops"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfA45dn9tMS1wuuB5uPdUz4sximoKE14CH5SmbZU8k7PCRxeQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             variant="ghost"
             className="w-full justify-center border border-white/45 bg-slate-950/65 text-white shadow-lg shadow-black/20 hover:border-white/75 hover:bg-slate-950/85 sm:w-auto"
           >
             <Terminal className="h-4 w-4 text-white" />
-            Learn More
+            Register Now
           </MagneticLink>
         </motion.div>
       </motion.div>
